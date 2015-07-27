@@ -164,9 +164,9 @@ ind <- which(max(reault)==reault, arr.ind=TRUE)
 cbind(a1[ind[,1]], a2[ind[,2]])
 
 filled.contour(x=-a1*100, y=a2*100, z=reault, 
-               color= terrain.colors, plot.title = title(main = "The Accuracy",
-               xlab = expression(paste(alpha[1], " ", 10^-2)), 
-               ylab = expression(paste(alpha[2], " ", 10^-2))),             
+               color= terrain.colors, plot.title = title(main = "The Accuracy", 
+                                                         xlab = expression(paste(alpha[1], " ", 10^-2)), 
+                                                         ylab = expression(paste(alpha[2], " ", 10^-2))),             
                key.title = title(main = "Accuracy"),
                key.axes = axis(4, seq(0, 1, by = 0.05)))
 
